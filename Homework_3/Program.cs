@@ -14,7 +14,7 @@ double[] CreateArray(double dlina, double max, double min)
     Random rnd = new Random();
     for (int i = 0; i < dlina; i++)
     {
-        array[i] = rnd.NextDouble();
+        array[i] = Math.Round(rnd.NextDouble()*10, 2);
 
     }
     return array;
